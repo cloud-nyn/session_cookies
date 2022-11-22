@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product</title>
+    <link href="/stylesheets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <%- include header %> 
+    <form id="cart-btn"action="/shoppingCart" method="post"><button>Cart</button></form>
+    <div id="product-box">
+      <% itemList.forEach(x=>{%>
+      <form id="item-box" action="/addToCart" method="post">
+        <input type="hidden" name="pId" value=<%= x.id %> />
+        <img src="/images/item.png" />
+        <hr />
+        <h3><%= x.name %></h3>
+        <p>$<%= x.price %></p>
+        <p><%= x.description %></p>
+        <button type="submit">Add to Cart</button>
+      </form>
+      <%})%>
+    </div>
+    <%- include footer %> 
+  </body>
+</html>

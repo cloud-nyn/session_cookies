@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product</title>
+    <link href="/stylesheets/cartStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <%- include header %>
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-box">
+        <% itemsInCart.forEach(item=>{%>
+        <div id="cart-item">
+            <img src="/images/item.png">
+            <hr>
+            <h2><%= item.itemName %></h2>
+            <h3>$<%= item.itemPrice %></h3>
+        </div>
+        <%})%>
+    </div>
+    
+    <%let sum=0;
+      itemsInCart.forEach(item=>sum+=item.itemPrice)
+    %> 
+    <div id="price-box">
+      <button type="submit">Checkout</button>
+      <h2>$<%= sum %> </h2>
+    </div>
+    <%- include footer %> 
+  </body>
+</html>

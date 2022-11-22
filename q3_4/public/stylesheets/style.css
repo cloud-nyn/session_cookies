@@ -1,0 +1,79 @@
+body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px 10px 10px;
+
+}
+
+#cart-btn>button {
+    padding: 15px 40px 15px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #899097ae;
+}
+
+#cart-btn>button:hover {
+    background-color: #ad174c;
+}
+
+#product-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(226, 209, 209);
+    margin: 0 10px 0 10px;
+}
+
+#item-box {
+    border: 1px solid #7e878f;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    width: 10%;
+    border-radius: 5%;
+}
+
+
+img {
+    width: 100px;
+}
+
+button {
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #50a2ee;
+    color: white
+}
+
+hr {
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12pt;
+}
+
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #40798C;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(234, 234, 234);
+    margin: 0 0 10px 0;
+    padding: 10px 0 10px 0;
+}

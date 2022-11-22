@@ -1,0 +1,16 @@
+{
+  "name": "question2",
+  "version": "1.0.0",
+  "description": "Question 2 of W4D1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alazar",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}
